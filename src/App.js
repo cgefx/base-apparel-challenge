@@ -15,10 +15,9 @@ function App() {
 				<section className='section'>
 					<h2 className='row'>Main Section</h2>
 					<p className='paragraph'>
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem animi
-						suscipit nam rem, vero ullam a numquam dicta libero velit cum adipisci nulla
-						rerum fugiat fugit labore sequi ad atque illum! At, neque. Impedit repellendus
-						eligendi ex illo id beatae.
+						We're coming soon Hello fellow shoppers! We're currently building our new
+						fashion store. Add your email below to stay up-to-date with announcements and
+						our launch deals. Email Address
 					</p>
 				</section>
 			</main>
