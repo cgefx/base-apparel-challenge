@@ -1,4 +1,45 @@
-//MEDIA QUERY MANAGER
+//MEDIA QUERY MANAGER - MOBILE FIRST
+/*
+min-width
+0-600px       Phone
+600-900px     Tablet Portrait
+900-1200      Tablet Landscape
+[1200- 1800]  Normal styles
+min-width
+1800px +      Big Desktop
+*/
+
+/*
+$breakpoint argument choices
+- bp600
+- bp900
+- bp1200
+*/
+
+@mixin respond($breakpoint) {
+	@if $breakpoint == bp600 {
+		@media only screen and (min-width: 37.5em) {
+			//600px divide by 16px base font size
+			@content;
+		}
+	}
+
+	@if $breakpoint == bp900 {
+		@media only screen and (min-width: 56.25em) {
+			//900px
+			@content;
+		}
+	}
+
+	@if $breakpoint == bp1200 {
+		@media only screen and (min-width: 75em) {
+			//1200px
+			@content;
+		}
+	}
+}
+
+//MEDIA QUERY MANAGER - DESKTOP FIRST
 /*
 max-width
 0-600px       Phone

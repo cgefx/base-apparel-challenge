@@ -4,12 +4,14 @@ import './sass/main.scss';
 
 function App() {
 	return (
-		<div className='container'>
-			<div className='column flex-center'>
-				<header className='header'>
-					<h1 className='header__text'>Header</h1>
-				</header>
+		<>
+			<div className='navigation'>
+				<nav className='navigation__nav'></nav>
 			</div>
+
+			<header className='header'>
+				<h1 className='header__text'>Header</h1>
+			</header>
 
 			<main>
 				<section className='section'>
@@ -21,7 +23,7 @@ function App() {
 					</p>
 				</section>
 			</main>
-		</div>
+		</>
 	);
 }
 

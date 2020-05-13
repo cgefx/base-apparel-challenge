@@ -1,14 +1,6 @@
 html {
 	box-sizing: border-box;
 	font-size: 62.5%; // 1rem = 10px
-
-	@include respond(bp900) {
-		font-size: 56.25%; //1rem = 8px, 8/16 = 50%
-	}
-
-	@include respond(bp600) {
-		font-size: 50%; //1rem = 8px, 8/16 = 50%
-	}
 }
 *,
 *:before,
@@ -22,8 +14,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-family: 'Poppins', sans-serif;
-	color: $color-dark-blue;
-	background-color: $color-light-gray;
+	background: $color-white;
 }
 
 h1,
