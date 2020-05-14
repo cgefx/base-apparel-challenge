@@ -1,4 +1,8 @@
-html {
+html,
+body,
+#app {
+	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
 	font-size: 62.5%; // 1rem = 10px
 }
@@ -9,8 +13,6 @@ html {
 }
 
 body {
-	margin: 0;
-	padding: 0;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-family: 'Poppins', sans-serif;
@@ -23,6 +25,5 @@ h3,
 h4,
 h5,
 h6 {
-	margin-top: 0;
-	margin-bottom: 0.5rem;
+	margin: 0;
 }

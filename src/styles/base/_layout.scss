@@ -11,11 +11,15 @@
 .column {
 	display: flex;
 	flex-direction: column;
+
+	@include respond(bp900) {
+		flex-direction: row-reverse;
+	}
 }
 
 .flex-center {
 	justify-content: center;
-	align-items: center;
+	align-content: center;
 }
 
 .flex-between {

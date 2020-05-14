@@ -17,9 +17,9 @@ $breakpoint argument choices
 */
 
 @mixin respond($breakpoint) {
-	@if $breakpoint == bp600 {
-		@media only screen and (min-width: 37.5em) {
-			//600px divide by 16px base font size
+	@if $breakpoint == bp1200 {
+		@media only screen and (min-width: 75em) {
+			//1200px
 			@content;
 		}
 	}
@@ -31,9 +31,9 @@ $breakpoint argument choices
 		}
 	}
 
-	@if $breakpoint == bp1200 {
-		@media only screen and (min-width: 75em) {
-			//1200px
+	@if $breakpoint == bp600 {
+		@media only screen and (min-width: 37.5em) {
+			//600px divide by 16px base font size
 			@content;
 		}
 	}
@@ -58,32 +58,32 @@ $breakpoint argument choices
 - bp1800
 */
 
-@mixin respond($breakpoint) {
-	@if $breakpoint == bp600 {
-		@media only screen and (max-width: 37.5em) {
-			//600px divide by 16px base font size
-			@content;
-		}
-	}
+// @mixin respond($breakpoint) {
+// 	@if $breakpoint == bp600 {
+// 		@media only screen and (max-width: 37.5em) {
+// 			//600px divide by 16px base font size
+// 			@content;
+// 		}
+// 	}
 
-	@if $breakpoint == bp900 {
-		@media only screen and (max-width: 56.25em) {
-			//900px
-			@content;
-		}
-	}
+// 	@if $breakpoint == bp900 {
+// 		@media only screen and (max-width: 56.25em) {
+// 			//900px
+// 			@content;
+// 		}
+// 	}
 
-	@if $breakpoint == bp1200 {
-		@media only screen and (max-width: 75em) {
-			//1200px
-			@content;
-		}
-	}
+// 	@if $breakpoint == bp1200 {
+// 		@media only screen and (max-width: 75em) {
+// 			//1200px
+// 			@content;
+// 		}
+// 	}
 
-	@if $breakpoint == bp1800 {
-		@media only screen and (min-width: 112.5em) {
-			//1800px
-			@content;
-		}
-	}
-}
+// 	@if $breakpoint == bp1800 {
+// 		@media only screen and (min-width: 112.5em) {
+// 			//1800px
+// 			@content;
+// 		}
+// 	}
+// }

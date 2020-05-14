@@ -8,6 +8,8 @@
 @import 'base/typography';
 
 // Components
-@import '../components/Announce/announce';
-@import '../components/Header/header';
-@import '../components/Navigation/navigation';
+@import './components/announce';
+@import './components/button';
+@import './components/form';
+@import './components/hero';
+@import './components/navigation';

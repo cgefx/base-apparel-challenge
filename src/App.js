@@ -32,13 +32,12 @@ function App() {
 				</nav>
 			</div>
 
-			<header className='header'>
-				<div className='header__img'></div>
-			</header>
-
 			<main>
-				<section className='section'>
-					<div className='announce'>
+				<section className='column'>
+					<div className='hero'>
+						<div className='hero__img'></div>
+					</div>
+					<div className='announce column flex-center'>
 						<h1 className='announce__headline'>
 							<span className='announce__headline--accent'>We're </span> coming soon
 						</h1>
@@ -49,14 +48,15 @@ function App() {
 
 						<div className='announce__form'>
 							<form action='' className='form'>
-								<div className='form__group'>
+								<div className='form__group row flex-center'>
 									<input
-										type='text'
+										type='email'
 										id='email'
 										className='form__input'
 										placeholder='Email Address'
+										required
 									/>
-									<button className='form__button'> > </button>
+									<button className='btn form__button'></button>
 								</div>
 							</form>
 						</div>
