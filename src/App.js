@@ -4,7 +4,7 @@ import './styles/main.scss';
 
 function App() {
 	return (
-		<>
+		<div className='container'>
 			<div className='navigation'>
 				<nav className='navigation__nav'>
 					<div className='navigation__logo'>
@@ -31,39 +31,45 @@ function App() {
 					</div>
 				</nav>
 			</div>
+			<div className='section'>
+				<div className='hero'>
+					<div className='hero__img'></div>
+				</div>
+				<div className='announce'>
+					<h1 className='announce__headline'>
+						<span className='announce__headline--accent'>We're </span> coming soon
+					</h1>
+					<p className='paragraph announce__text'>
+						Hello fellow shoppers! We're currently building our new fashion store. Add
+						your email below to stay up-to-date with announcements and our launch deals.
+					</p>
 
-			<main>
-				<section className='column'>
-					<div className='hero'>
-						<div className='hero__img'></div>
+					<div className='announce__form'>
+						<form action='' className='form'>
+							<div className='form__group row flex-center'>
+								<input
+									type='email'
+									id='email'
+									className='form__input'
+									placeholder='Email Address'
+									required
+								/>
+								<button className='btn form__button'>
+									<svg xmlns='http://www.w3.org/2000/svg' width='12' height='20'>
+										<path
+											fill='none'
+											stroke='#FFF'
+											strokeWidth='2'
+											d='M1 1l8.836 8.836L1 18.671'
+										/>
+									</svg>
+								</button>
+							</div>
+						</form>
 					</div>
-					<div className='announce column flex-center'>
-						<h1 className='announce__headline'>
-							<span className='announce__headline--accent'>We're </span> coming soon
-						</h1>
-						<p className='paragraph announce__text'>
-							Hello fellow shoppers! We're currently building our new fashion store. Add
-							your email below to stay up-to-date with announcements and our launch deals.
-						</p>
-
-						<div className='announce__form'>
-							<form action='' className='form'>
-								<div className='form__group row flex-center'>
-									<input
-										type='email'
-										id='email'
-										className='form__input'
-										placeholder='Email Address'
-										required
-									/>
-									<button className='btn form__button'></button>
-								</div>
-							</form>
-						</div>
-					</div>
-				</section>
-			</main>
-		</>
+				</div>
+			</div>
+		</div>
 	);
 }
 

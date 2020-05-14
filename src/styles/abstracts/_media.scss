@@ -1,7 +1,7 @@
 //MEDIA QUERY MANAGER - MOBILE FIRST
 /*
 min-width
-0-600px       Phone
+0-375px       Phone
 600-900px     Tablet Portrait
 900-1200      Tablet Landscape
 [1200- 1800]  Normal styles
@@ -11,7 +11,7 @@ min-width
 
 /*
 $breakpoint argument choices
-- bp600
+- bp375
 - bp900
 - bp1200
 */
@@ -34,6 +34,13 @@ $breakpoint argument choices
 	@if $breakpoint == bp600 {
 		@media only screen and (min-width: 37.5em) {
 			//600px divide by 16px base font size
+			@content;
+		}
+	}
+
+	@if $breakpoint == bp375 {
+		@media only screen and (min-width: 23.5em) {
+			//375px divide by 16px base font size
 			@content;
 		}
 	}
