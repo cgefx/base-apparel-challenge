@@ -1,4 +1,4 @@
-//MEDIA QUERY MANAGER - MOBILE FIRST
+//*MEDIA QUERY MANAGER - MOBILE FIRST
 /*
 min-width
 0-375px       Phone
@@ -16,37 +16,37 @@ $breakpoint argument choices
 - bp1200
 */
 
-@mixin respond($breakpoint) {
-	@if $breakpoint == bp1200 {
-		@media only screen and (min-width: 75em) {
-			//1200px
-			@content;
-		}
-	}
+// @mixin respond($breakpoint) {
+// 	@if $breakpoint == bp1200 {
+// 		@media only screen and (min-width: 75em) {
+// 			//1200px
+// 			@content;
+// 		}
+// 	}
 
-	@if $breakpoint == bp900 {
-		@media only screen and (min-width: 56.25em) {
-			//900px
-			@content;
-		}
-	}
+// 	@if $breakpoint == bp900 {
+// 		@media only screen and (min-width: 56.25em) {
+// 			//900px
+// 			@content;
+// 		}
+// 	}
 
-	@if $breakpoint == bp600 {
-		@media only screen and (min-width: 37.5em) {
-			//600px divide by 16px base font size
-			@content;
-		}
-	}
+// 	@if $breakpoint == bp600 {
+// 		@media only screen and (min-width: 37.5em) {
+// 			//600px divide by 16px base font size
+// 			@content;
+// 		}
+// 	}
 
-	@if $breakpoint == bp375 {
-		@media only screen and (min-width: 23.5em) {
-			//375px divide by 16px base font size
-			@content;
-		}
-	}
-}
+// 	@if $breakpoint == bp375 {
+// 		@media only screen and (min-width: 23.5em) {
+// 			//375px divide by 16px base font size
+// 			@content;
+// 		}
+// 	}
+// }
 
-//MEDIA QUERY MANAGER - DESKTOP FIRST
+//*MEDIA QUERY MANAGER - DESKTOP FIRST
 /*
 max-width
 0-600px       Phone
@@ -65,32 +65,32 @@ $breakpoint argument choices
 - bp1800
 */
 
-// @mixin respond($breakpoint) {
-// 	@if $breakpoint == bp600 {
-// 		@media only screen and (max-width: 37.5em) {
-// 			//600px divide by 16px base font size
-// 			@content;
-// 		}
-// 	}
+@mixin respond($breakpoint) {
+	@if $breakpoint == bp600 {
+		@media only screen and (max-width: 37.5em) {
+			//600px divide by 16px base font size
+			@content;
+		}
+	}
 
-// 	@if $breakpoint == bp900 {
-// 		@media only screen and (max-width: 56.25em) {
-// 			//900px
-// 			@content;
-// 		}
-// 	}
+	@if $breakpoint == bp900 {
+		@media only screen and (max-width: 56.25em) {
+			//900px
+			@content;
+		}
+	}
 
-// 	@if $breakpoint == bp1200 {
-// 		@media only screen and (max-width: 75em) {
-// 			//1200px
-// 			@content;
-// 		}
-// 	}
+	@if $breakpoint == bp1200 {
+		@media only screen and (max-width: 75em) {
+			//1200px
+			@content;
+		}
+	}
 
-// 	@if $breakpoint == bp1800 {
-// 		@media only screen and (min-width: 112.5em) {
-// 			//1800px
-// 			@content;
-// 		}
-// 	}
-// }
+	@if $breakpoint == bp1800 {
+		@media only screen and (min-width: 112.5em) {
+			//1800px
+			@content;
+		}
+	}
+}

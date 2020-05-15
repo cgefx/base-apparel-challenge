@@ -1,8 +1,10 @@
 .form {
-	// box-sizing: content-box;
-
+	margin: 4rem 0;
 	&__group {
 		position: relative;
+		display: flex;
+		align-items: center;
+		width: 44rem;
 	}
 
 	&__input {
@@ -10,17 +12,10 @@
 		border-right: hidden;
 		border-radius: 24px;
 		font-size: 1.5rem;
-		font-family: inherit;
 		color: $color-primary;
-		opacity: 0.5;
-		padding: 1.6rem 2rem;
-		background-color: transparent;
-		width: 89%;
-		transition: all 0.3s;
-
-		// @include respond(tab-port) {
-		// 	width: 100%;
-		// }
+		padding: 1.8rem 2rem;
+		height: 100%;
+		width: 100%;
 
 		&:focus {
 			outline: none;
@@ -28,17 +23,12 @@
 		}
 
 		&:focus:invalid {
-			border: 3px solid $color-alert;
-		}
-		&::-webkit-input-placeholder {
-			color: $color-primary;
+			border: 1px solid $color-alert;
 		}
 	}
 
 	&__button {
 		position: absolute;
 		right: 0;
-		border: none;
-		height: 100%;
 	}
 }
