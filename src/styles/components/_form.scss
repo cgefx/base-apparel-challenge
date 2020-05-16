@@ -1,34 +1,57 @@
 .form {
-	margin: 4rem 0;
+	@include respond(bp1100) {
+		margin: 0 auto;
+		width: 90%;
+	}
 	&__group {
 		position: relative;
 		display: flex;
 		align-items: center;
-		width: 44rem;
+		justify-content: center;
 	}
 
 	&__input {
-		border: 0.5px solid $color-primary;
+		position: relative;
+		border: 2px solid $color-dark;
 		border-right: hidden;
-		border-radius: 24px;
-		font-size: 1.5rem;
+		border-radius: 28px;
+		opacity: 0.4;
+		margin: 0 auto;
 		color: $color-primary;
-		padding: 1.8rem 2rem;
-		height: 100%;
+		padding: 1.6rem 2rem;
+		font-size: 1.8rem;
 		width: 100%;
+		font-family: inherit;
 
-		&:focus {
-			outline: none;
-			opacity: 1;
+		&--alert-text {
+			// visibility: hidden;
+			color: $color-alert;
+			padding: 1.2rem;
+			margin-left: 1.2rem;
+			font-size: $default-font-size;
+			font-weight: 400;
 		}
 
-		&:focus:invalid {
-			border: 1px solid $color-alert;
+		&:focus {
+			opacity: 0.8;
+			color: $color-dark;
+		}
+
+		&:not(:placeholder-shown):invalid {
+			border: 2px solid $color-alert;
+			& + ::after {
+				content: url('../../assets/images/icon-error.svg');
+				position: absolute;
+				top: 1.5rem;
+				right: 10rem;
+			}
 		}
 	}
 
 	&__button {
 		position: absolute;
 		right: 0;
+		height: 100%;
+		width: 20%;
 	}
 }

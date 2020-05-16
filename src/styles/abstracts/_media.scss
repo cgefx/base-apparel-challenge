@@ -60,7 +60,7 @@ min-width
 /*
 $breakpoint argument choices
 - bp600
-- bp900
+- bp1000
 - bp1200
 - bp1800
 */
@@ -73,9 +73,9 @@ $breakpoint argument choices
 		}
 	}
 
-	@if $breakpoint == bp900 {
-		@media only screen and (max-width: 56.25em) {
-			//900px
+	@if $breakpoint == bp1100 {
+		@media only screen and (max-width: 68.75em) {
+			//1100px
 			@content;
 		}
 	}
